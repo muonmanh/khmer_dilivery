@@ -56,7 +56,7 @@ public class ListViewStickyHeader extends ListView {
                     // we have space left
                     int remainingSpace = rowsTop + contentHeight;
                     if(headerHeight<remainingSpace){ // we have place to move
-                        moveY = -rowsTop;
+                        moveY = - rowsTop;
                     } else { // we reached to the limits of current view. So we need to move the header out
                         moveY = contentHeight - headerHeight;
                     }

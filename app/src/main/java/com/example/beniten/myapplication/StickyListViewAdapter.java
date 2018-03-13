@@ -67,9 +67,9 @@ public class StickyListViewAdapter extends ArrayAdapter<String> implements Secti
         convertView = inflater.inflate(resource, parent, false);
         TextView textView = (TextView) convertView.findViewById(R.id.title_text);
 
-        textView.setText("Header "+ sections[position]);
-        TextView tvContent = convertView.findViewById(R.id.tv_content);
-        tvContent.setText(value);
+       // textView.setText("Header "+ sections[position]);
+       // TextView tvContent = convertView.findViewById(R.id.tv_content);
+       // tvContent.setText(value);
 
         return convertView;
     }

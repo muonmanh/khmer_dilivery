@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < MAX_ROWS; i++) {
             modelList.add("List item " + i);
         }
-        ArrayAdapter adapter = new ArrayAdapter(this, R.layout.list_row, modelList);
+     //   ArrayAdapter adapter = new ArrayAdapter(this, R.layout.list_row, modelList);
       //  listView.setAdapter(adapter);
 
         ListViewStickyHeader listView = (ListViewStickyHeader) findViewById(R.id.list_view);
@@ -73,8 +73,5 @@ public class MainActivity extends AppCompatActivity {
 
         }
         listView.setAdapter(new StickyListViewAdapter(this, R.layout.list_row, elements));
-
-
-
     }
 }
